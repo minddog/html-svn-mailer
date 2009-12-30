@@ -1145,13 +1145,13 @@ class HTMLCommitRenderer(TextCommitRenderer):
       if not diff.diff:
         continue
 
-      w(SEPARATOR + '\n')
+      w(SEPARATOR + '<br>')
 
       if diff.binary:
         if diff.singular:
-          w('Binary file. No diff available.\n')
+          w('Binary file. No diff available.<br>')
         else:
-          w('Binary files. No diff available.\n')
+          w('Binary files. No diff available.<br>')
         continue
 
 
